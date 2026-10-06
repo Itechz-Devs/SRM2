@@ -1,6 +1,6 @@
-# GeoSRM Studio
+# SRM Studio
 
-GeoSRM Studio is a working presentation and prototype for **Deep Learning Based Super Resolution Mapping from Medium Resolution Satellite Imageries**.
+SRM Studio is a working presentation and prototype for **Deep Learning Based Super Resolution Mapping from Medium Resolution Satellite Imageries**.
 
 The project explains how to transform 10 m Sentinel-2 style imagery into sharper sub-4 m analysis products while preserving geospatial and spectral consistency. It also includes a frontend demo and a FastAPI backend baseline that can later be replaced with trained ESRGAN, SwinIR, or diffusion model weights.
 

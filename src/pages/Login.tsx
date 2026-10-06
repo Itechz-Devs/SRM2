@@ -33,7 +33,7 @@ export default function Login() {
       <nav className="fixed left-0 right-0 top-0 z-50 border-b border-white/10 bg-[#07110f]/72 px-5 py-4 backdrop-blur-md">
         <div className="mx-auto flex max-w-7xl items-center justify-between gap-4">
           <Link to="/" className="font-semibold tracking-[0.22em] text-emerald-100">
-            GEOSRM STUDIO
+            SRM STUDIO
           </Link>
           <Link
             to="/"

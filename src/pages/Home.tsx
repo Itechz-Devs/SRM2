@@ -122,7 +122,7 @@ export default function Home() {
             href="#top"
             className="font-semibold tracking-[0.22em] text-emerald-100"
           >
-            GEOSRM STUDIO
+            SRM STUDIO
           </a>
 
           <div className="hidden items-center gap-7 text-sm text-stone-300 md:flex">
@@ -244,7 +244,7 @@ export default function Home() {
             </p>
 
             <h1 className="text-6xl font-black uppercase leading-[0.88] tracking-[-0.08em] text-white sm:text-7xl md:text-8xl lg:text-9xl">
-              GeoSRM Studio
+              SRM Studio
             </h1>
 
             <h2 className="mt-7 max-w-3xl text-2xl font-medium leading-tight text-emerald-50 sm:text-4xl">
@@ -634,7 +634,7 @@ export default function Home() {
       <footer className="px-5 py-10 text-sm text-stone-400">
         <div className="mx-auto flex max-w-7xl flex-col gap-3 border-t border-white/12 pt-8 sm:flex-row sm:items-center sm:justify-between">
           <p>
-            GeoSRM Studio: deep learning based super-resolution mapping project
+            SRM Studio: deep learning based super-resolution mapping project
             scaffold.
           </p>
 

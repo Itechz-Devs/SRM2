@@ -90,7 +90,7 @@ export default function Forestry() {
         </motion.div>
       </section>
 
-      {/* How GeoSRM could help */}
+      {/* How SRM could help */}
       <section className="relative overflow-hidden px-5 py-20">
         <AmbientBackground variant="amber" />
         <div className="relative z-10">
@@ -101,7 +101,7 @@ export default function Forestry() {
             viewport={{ once: true, amount: 0.35 }}
             transition={{ duration: 0.6 }}
           >
-            <p className="text-sm font-bold uppercase tracking-[0.24em] text-amber-300">How GeoSRM could help</p>
+            <p className="text-sm font-bold uppercase tracking-[0.24em] text-amber-300">How SRM could help</p>
             <h2 className="mt-4 text-3xl font-bold text-white sm:text-4xl">
               A potential future capability, not a current analysis engine.
             </h2>
@@ -112,7 +112,7 @@ export default function Forestry() {
               precision between satellite passes.
             </p>
             <p className="mt-4 text-base leading-7 text-stone-400">
-              GeoSRM's current prototype does not perform deforestation detection or vegetation classification. This
+              SRM's current prototype does not perform deforestation detection or vegetation classification. This
               page describes a potential future capability that would require careful validation against real
               forestry and environmental datasets.
             </p>
@@ -139,7 +139,7 @@ export default function Forestry() {
 
       <footer className="px-5 py-10 text-sm text-stone-400">
         <div className="mx-auto max-w-7xl border-t border-white/12 pt-8">
-          <p>GeoSRM Studio: deep learning based super-resolution mapping project scaffold.</p>
+          <p>SRM Studio: deep learning based super-resolution mapping project scaffold.</p>
         </div>
       </footer>
     </main>

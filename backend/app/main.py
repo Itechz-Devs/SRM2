@@ -11,7 +11,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 
 app = FastAPI(
-    title="GeoSRM Studio API",
+    title="SRM Studio API",
     description="FastAPI and OpenCV baseline service for satellite super-resolution mapping.",
     version="1.0.0",
 )

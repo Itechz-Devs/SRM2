@@ -2,18 +2,18 @@ services:
   postgres:
     image: postgres:16-alpine
     environment:
-      POSTGRES_DB: geosrm
-      POSTGRES_USER: geosrm
-      POSTGRES_PASSWORD: geosrm
+      POSTGRES_DB: SRM
+      POSTGRES_USER: SRM
+      POSTGRES_PASSWORD: SRM
     ports:
       - "5432:5432"
     volumes:
-      - geosrm_pgdata:/var/lib/postgresql/data
+      - SRM_pgdata:/var/lib/postgresql/data
 
   api:
     build: ./backend
     environment:
-      DATABASE_URL: postgresql://geosrm:geosrm@postgres:5432/geosrm
+      DATABASE_URL: postgresql://SRM:SRM@postgres:5432/SRM
       CORS_ORIGINS: http://localhost:5173
     ports:
       - "8000:8000"
@@ -21,4 +21,4 @@ services:
       - postgres
 
 volumes:
-  geosrm_pgdata:
+  SRM_pgdata:

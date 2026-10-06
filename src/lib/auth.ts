@@ -11,8 +11,8 @@ import type { Session, StoredAccount } from "../types";
 // asked to register. Registered/logged-in accounts have no limit.
 // ---------------------------------------------------------------------------
 
-const ACCOUNTS_KEY = "geosrm_accounts";
-const SESSION_KEY = "geosrm_session";
+const ACCOUNTS_KEY = "SRM_accounts";
+const SESSION_KEY = "SRM_session";
 export const GUEST_RUN_LIMIT = 1;
 
 function generateId() {
