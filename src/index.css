@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #07110f;
+}
+
+.sweep-line {
+  animation: sweep 4.5s ease-in-out infinite;
+}
+
+@keyframes sweep {
+  0%,
+  100% {
+    transform: translateY(0);
+    opacity: 0.12;
+  }
+
+  50% {
+    transform: translateY(56rem);
+    opacity: 0.58;
+  }
+}
+
+/* Ambient background: drifting glow blobs used behind otherwise-flat sections */
+.drift-blob-a {
+  animation: drift-a 22s ease-in-out infinite;
+}
+
+.drift-blob-b {
+  animation: drift-b 26s ease-in-out infinite;
+}
+
+@keyframes drift-a {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(6%, 8%) scale(1.12);
+  }
+}
+
+@keyframes drift-b {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(-7%, -6%) scale(1.08);
+  }
+}
+
+/* Slowly panning technical grid overlay */
+.grid-pan {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.11) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.11) 1px, transparent 1px);
+  background-size: 48px 48px;
+  animation: grid-pan 40s linear infinite;
+}
+
+@keyframes grid-pan {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 96px 96px;
+  }
+}
+
+/* Slow pulse for accent glows */
+.pulse-glow {
+  animation: pulse-glow 6s ease-in-out infinite;
+}
+
+@keyframes pulse-glow {
+  0%,
+  100% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+}

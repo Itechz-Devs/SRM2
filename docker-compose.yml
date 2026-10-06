@@ -1,0 +1,24 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: geosrm
+      POSTGRES_USER: geosrm
+      POSTGRES_PASSWORD: geosrm
+    ports:
+      - "5432:5432"
+    volumes:
+      - geosrm_pgdata:/var/lib/postgresql/data
+
+  api:
+    build: ./backend
+    environment:
+      DATABASE_URL: postgresql://geosrm:geosrm@postgres:5432/geosrm
+      CORS_ORIGINS: http://localhost:5173
+    ports:
+      - "8000:8000"
+    depends_on:
+      - postgres
+
+volumes:
+  geosrm_pgdata:
